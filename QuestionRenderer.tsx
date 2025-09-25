@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useRef } from 'react';
+import QuestionRenderer from './components/QuestionRenderer/index';
 
 type Lang = 'fa' | 'en';
 type BilingualText = { [key in Lang]: string };
