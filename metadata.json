@@ -1,0 +1,5 @@
+{
+  "name": "finnnal zzpip",
+  "description": "A Progressive Web App to help Iranians in the UK complete various government and benefit forms (e.g., PIP, Universal Credit). The app provides AI-powered assistance to generate persuasive, high-scoring answers in Farsi, guides users through forms, and works offline.",
+  "requestFramePermissions": []
+}

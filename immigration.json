@@ -1,0 +1,70 @@
+{
+  "title": {
+    "fa": "امور مهاجرت",
+    "en": "Immigration Affairs"
+  },
+  "intro": {
+    "fa": "این بخش برای راهنمایی در مورد فرم‌های رایج مهاجرتی در UK طراحی شده است. لطفاً نوع درخواست خود را مشخص کنید.",
+    "en": "This section is designed to provide guidance on common immigration forms in the UK. Please specify your application type."
+  },
+  "questions": [
+    {
+      "id": "application_type",
+      "type": "single-select",
+      "question": {
+        "fa": "چه نوع درخواست مهاجرتی دارید؟",
+        "en": "What type of immigration application do you have?"
+      },
+      "options": [
+        { "value": "visa_extension", "label": { "fa": "تمدید ویزا", "en": "Visa Extension" } },
+        { "value": "settlement", "label": { "fa": "درخواست اقامت دائم (ILR)", "en": "Indefinite Leave to Remain (ILR)" } },
+        { "value": "citizenship", "label": { "fa": "درخواست شهروندی (تابعیت)", "en": "Citizenship (Naturalisation) Application" } },
+        { "value": "family_visa", "label": { "fa": "ویزای خانوادگی (همسر، فرزند)", "en": "Family Visa (Spouse, Child)" } }
+      ]
+    },
+    {
+      "id": "current_visa",
+      "type": "short-text",
+      "question": {
+        "fa": "نوع ویزای فعلی شما چیست؟",
+        "en": "What is your current visa type?"
+      },
+      "placeholder": {
+        "fa": "مثلاً: Skilled Worker, Student Visa, Spouse Visa",
+        "en": "e.g., Skilled Worker, Student Visa, Spouse Visa"
+      },
+      "allowProof": true,
+      "proof_hint": {
+        "fa": "کارت اقامت بیومتریک (BRP) خود را بارگذاری کنید.",
+        "en": "Upload your Biometric Residence Permit (BRP)."
+      }
+    },
+    {
+      "id": "time_in_uk",
+      "type": "short-text",
+      "question": {
+        "fa": "چه مدت در UK زندگی کرده‌اید؟",
+        "en": "How long have you lived in the UK?"
+      },
+      "placeholder": {
+        "fa": "مثلاً: ۵ سال و ۳ ماه",
+        "en": "e.g., 5 years and 3 months"
+      }
+    },
+    {
+      "id": "absences",
+      "type": "long-text",
+      "question": {
+        "fa": "در ۵ سال گذشته، چه مدت خارج از UK بوده‌اید؟ (تاریخ‌ها و دلایل سفر)",
+        "en": "In the last 5 years, how long have you been outside the UK? (List dates and reasons for travel)"
+      },
+      "placeholder": {
+        "fa": "مثلاً: 10/01/2022 - 25/01/2022 (تعطیلات)",
+        "en": "e.g., 10/01/2022 - 25/01/2022 (Holiday)"
+      },
+      "when": {
+        "application_type": "settlement"
+      }
+    }
+  ]
+}

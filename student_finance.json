@@ -1,0 +1,77 @@
+{
+  "title": {
+    "fa": "فرم‌های Student Finance (وام و کمک‌هزینه تحصیل)",
+    "en": "Student Finance Forms (Tuition & Maintenance Loans)"
+  },
+  "intro": {
+    "fa": "این بخش برای ایرانیان مقیم UK طراحی شده تا بتوانند فرم‌های Student Finance (شهریه و کمک‌هزینه زندگی) را به‌راحتی پر کنند. پاسخ‌ها به زبان فارسی ساده راهنمایی خواهند داد.",
+    "en": "This section is designed for Iranians in the UK to easily fill out Student Finance forms (for tuition fees and living costs). The answers will provide guidance in simple Farsi."
+  },
+  "questions": [
+    {
+      "id": "study_level",
+      "type": "single-select",
+      "question": {
+        "fa": "در چه سطحی تحصیل می‌کنید؟",
+        "en": "At what level are you studying?"
+      },
+      "options": [
+        { "value": "undergrad", "label": { "fa": "کارشناسی (Undergraduate)", "en": "Undergraduate" } },
+        { "value": "postgrad", "label": { "fa": "کارشناسی ارشد/دکتری (Postgraduate)", "en": "Postgraduate (Master's/PhD)" } }
+      ]
+    },
+    {
+      "id": "residency_status",
+      "type": "single-select",
+      "question": {
+        "fa": "وضعیت اقامتی شما چیست؟",
+        "en": "What is your residency status?"
+      },
+      "options": [
+        { "value": "settled", "label": { "fa": "دارای اقامت دائم (Settled/ILR)", "en": "Settled/ILR status" } },
+        { "value": "pre_settled", "label": { "fa": "Pre-settled", "en": "Pre-settled status" } },
+        { "value": "refugee", "label": { "fa": "پناهنده/حمایت انسانی", "en": "Refugee/Humanitarian Protection" } },
+        { "value": "other", "label": { "fa": "سایر", "en": "Other" } }
+      ],
+      "allowProof": true,
+      "proof_hint": {
+        "fa": "کارت BRP یا نامه Home Office.",
+        "en": "BRP card or Home Office letter."
+      }
+    },
+    {
+      "id": "household_income",
+      "type": "currency",
+      "question": {
+        "fa": "درآمد سالانه خانوار:",
+        "en": "Annual household income:"
+      },
+      "placeholder": {
+        "fa": "£",
+        "en": "£"
+      },
+      "allowProof": true,
+      "proof_hint": {
+        "fa": "P60، فیش حقوقی یا استیتمنت بانکی والدین/خودتان.",
+        "en": "P60, payslips, or bank statements for your parents/yourself."
+      }
+    },
+    {
+      "id": "dependents",
+      "type": "single-select",
+      "question": {
+        "fa": "آیا فرزند یا فرد تحت تکفل دارید؟",
+        "en": "Do you have any children or other dependents?"
+      },
+      "options": [
+        { "value": "yes", "label": { "fa": "بله", "en": "Yes" } },
+        { "value": "no", "label": { "fa": "خیر", "en": "No" } }
+      ],
+      "allowProof": true,
+      "proof_hint": {
+        "fa": "گواهی تولد فرزند یا مدارک وابستگی.",
+        "en": "Child's birth certificate or dependency documents."
+      }
+    }
+  ]
+}

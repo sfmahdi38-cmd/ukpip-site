@@ -1,0 +1,79 @@
+{
+  "title": {
+    "fa": "فرم‌های NHS (ثبت GP و کمک‌هزینه درمان)",
+    "en": "NHS Forms (GP Registration & Health Costs)"
+  },
+  "intro": {
+    "fa": "این بخش برای راهنمایی در ثبت GP (پزشک عمومی) و فرم‌های HC1/HC2 جهت دریافت کمک‌هزینه هزینه‌های درمان، دارو و دندانپزشکی طراحی شده است.",
+    "en": "This section is designed to help with GP registration and HC1/HC2 forms for help with health, prescription, and dental costs."
+  },
+  "questions": [
+    {
+      "id": "form_type",
+      "type": "single-select",
+      "question": {
+        "fa": "برای کدام فرم نیاز به راهنمایی دارید؟",
+        "en": "Which form do you need help with?"
+      },
+      "options": [
+        { "value": "gp", "label": { "fa": "ثبت GP (پزشک عمومی)", "en": "GP Registration" } },
+        { "value": "hc1", "label": { "fa": "فرم HC1/HC2 (کمک‌هزینه درمان/دارو/دندان)", "en": "HC1/HC2 Form (Help with health costs)" } }
+      ]
+    },
+    {
+      "id": "gp_address",
+      "type": "short-text",
+      "when": { "form_type": "gp" },
+      "question": {
+        "fa": "آدرس کامل محل سکونت شما چیست؟",
+        "en": "What is your full home address?"
+      },
+      "placeholder": {
+        "fa": "مثلاً: 123 King’s Road, Manchester",
+        "en": "e.g., 123 King’s Road, Manchester"
+      },
+      "allowProof": true,
+      "proof_hint": {
+        "fa": "مدرک آدرس مثل قبض آب/برق یا قرارداد اجاره را بارگذاری کنید.",
+        "en": "Upload proof of address like a utility bill or rental agreement."
+      }
+    },
+    {
+      "id": "hc1_status",
+      "type": "single-select",
+      "when": { "form_type": "hc1" },
+      "question": {
+        "fa": "وضعیت مالی/شغلی شما چیست؟",
+        "en": "What is your financial/work status?"
+      },
+      "options": [
+        { "value": "benefits", "label": { "fa": "دریافت‌کننده مزایا (مثل UC/ESA)", "en": "Receiving benefits (e.g., UC/ESA)" } },
+        { "value": "low_income", "label": { "fa": "درآمد پایین", "en": "Low income" } },
+        { "value": "student", "label": { "fa": "دانشجو", "en": "Student" } }
+      ],
+      "allowProof": true,
+      "proof_hint": {
+        "fa": "نامه مزایا، فیش حقوقی یا کارت دانشجویی را بارگذاری کنید.",
+        "en": "Upload a benefit letter, payslip, or student ID."
+      }
+    },
+    {
+      "id": "hc1_savings",
+      "type": "currency",
+      "when": { "form_type": "hc1" },
+      "question": {
+        "fa": "میزان پس‌انداز/سرمایه:",
+        "en": "Amount of savings/capital:"
+      },
+      "placeholder": {
+        "fa": "£",
+        "en": "£"
+      },
+      "allowProof": true,
+      "proof_hint": {
+        "fa": "استیتمنت بانکی.",
+        "en": "Bank statement."
+      }
+    }
+  ]
+}

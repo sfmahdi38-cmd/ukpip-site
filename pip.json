@@ -1,0 +1,77 @@
+{
+  "title": {
+    "fa": "فرم PIP",
+    "en": "PIP Form"
+  },
+  "intro": {
+    "fa": "به دستیار فرم PIP خوش آمدید. لطفاً به سوالات زیر با دقت پاسخ دهید.",
+    "en": "Welcome to the PIP Form Assistant. Please answer the following questions carefully."
+  },
+  "questions": [
+    {
+      "id": "preparing_food",
+      "type": "long-text",
+      "question": {
+        "fa": "آماده کردن غذا",
+        "en": "Preparing food"
+      },
+      "description": {
+        "fa": "درباره مشکلاتی که در تهیه یک وعده غذایی ساده دارید و چگونه آن را مدیریت می‌کنید، برای ما بگویید.",
+        "en": "Tell us about the difficulties you have with preparing a simple meal and how you manage."
+      },
+      "allowProof": true
+    },
+    {
+      "id": "eating_drinking",
+      "type": "long-text",
+      "question": {
+        "fa": "خوردن و آشامیدن",
+        "en": "Eating and drinking"
+      },
+      "description": {
+        "fa": "هر مشکلی که در خوردن، آشامیدن یا بلعیدن دارید را شرح دهید.",
+        "en": "Describe any problems you have with eating, drinking, or swallowing."
+      },
+      "allowProof": true
+    },
+    {
+      "id": "managing_treatments",
+      "type": "long-text",
+      "question": {
+        "fa": "مدیریت درمان",
+        "en": "Managing your treatments"
+      },
+      "description": {
+        "fa": "درباره کمکی که برای مدیریت درمان‌های خود نیاز دارید، مانند مصرف دارو یا نظارت بر سلامتی‌تان، برای ما بگویید.",
+        "en": "Tell us about the help you need to manage your treatments, like taking medication or monitoring your health."
+      },
+      "allowProof": true
+    },
+    {
+      "id": "washing_bathing",
+      "type": "long-text",
+      "question": {
+        "fa": "شست‌وشو و حمام کردن",
+        "en": "Washing and bathing"
+      },
+      "description": {
+        "fa": "مشکلاتی که در شست‌وشو و حمام کردن دارید و کمکی که نیاز دارید را شرح دهید.",
+        "en": "Describe the difficulties you have with washing and bathing and the help you need."
+      },
+      "allowProof": true
+    },
+    {
+      "id": "dressing_undressing",
+      "type": "long-text",
+      "question": {
+        "fa": "لباس پوشیدن و درآوردن",
+        "en": "Dressing and undressing"
+      },
+      "description": {
+        "fa": "هر مشکلی که در لباس پوشیدن و درآوردن دارید را برای ما بگویید.",
+        "en": "Tell us about any problems you have with dressing and undressing."
+      },
+      "allowProof": true
+    }
+  ]
+}

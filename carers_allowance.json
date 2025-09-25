@@ -1,0 +1,73 @@
+{
+  "title": {
+    "fa": "کمک‌هزینه مراقب (Carer’s Allowance)",
+    "en": "Carer's Allowance"
+  },
+  "intro": {
+    "fa": "اگر شما حداقل 35 ساعت در هفته از فردی که مزایای ناتوانی دریافت می‌کند مراقبت می‌کنید، ممکن است واجد شرایط Carer’s Allowance باشید. به سوالات زیر پاسخ دهید و مدارک مرتبط را بارگذاری کنید.",
+    "en": "If you care for someone for at least 35 hours a week and they receive certain disability benefits, you might be eligible for Carer's Allowance. Answer the questions below and upload relevant documents."
+  },
+  "questions": [
+    {
+      "id": "cared_person_benefit",
+      "type": "multi-select",
+      "question": {
+        "fa": "فردی که از او مراقبت می‌کنید کدام مزایا را دریافت می‌کند؟",
+        "en": "Which benefits does the person you care for receive?"
+      },
+      "options": [
+        { "value": "pip_daily_living", "label": { "fa": "PIP - بخش Daily Living", "en": "PIP - Daily Living component" } },
+        { "value": "dla_middle_high_care", "label": { "fa": "DLA - نرخ Middle/High Care", "en": "DLA - Middle or High rate care component" } },
+        { "value": "attendance_allowance", "label": { "fa": "Attendance Allowance", "en": "Attendance Allowance" } },
+        { "value": "armed_forces_independence", "label": { "fa": "Armed Forces Independence Payment", "en": "Armed Forces Independence Payment" } },
+        { "value": "none", "label": { "fa": "هیچ‌کدام/نامشخص", "en": "None/Unsure" } }
+      ],
+      "allowProof": true,
+      "proof_hint": {
+        "fa": "نامه مزایای فرد تحت مراقبت (تصمیم‌نامه/اسکرین‌شات).",
+        "en": "Benefit letter for the person being cared for (decision letter/screenshot)."
+      }
+    },
+    {
+      "id": "hours_per_week",
+      "type": "single-select",
+      "question": {
+        "fa": "چند ساعت در هفته مراقبت می‌کنید؟",
+        "en": "How many hours a week do you spend caring?"
+      },
+      "options": [
+        { "value": "lt35", "label": { "fa": "کمتر از 35 ساعت", "en": "Less than 35 hours" } },
+        { "value": "gte35", "label": { "fa": "35 ساعت یا بیشتر", "en": "35 hours or more" } }
+      ]
+    },
+    {
+      "id": "work_earnings",
+      "type": "long-text",
+      "question": {
+        "fa": "وضعیت کار و درآمد خالص هفتگی شما (بعد از کسورات) چقدر است؟",
+        "en": "What is your work status and net weekly earnings (after deductions)?"
+      },
+      "placeholder": {
+        "fa": "مثلا: شاغل، £120 در هفته",
+        "en": "e.g., Employed, £120 per week"
+      },
+      "allowProof": true,
+      "proof_hint": {
+        "fa": "فیش حقوق/سوابق بانکی/خلاصه درآمد خویش‌فرما.",
+        "en": "Payslips/bank statements/self-employment income summary."
+      }
+    },
+    {
+      "id": "care_tasks",
+      "type": "long-text",
+      "question": {
+        "fa": "کارهای مراقبتی‌ای که انجام می‌دهید چیست؟",
+        "en": "What caring tasks do you perform?"
+      },
+      "placeholder": {
+        "fa": "مثلاً: کمک در شست‌وشو/لباس پوشیدن، آماده‌سازی غذا، دارو، همراهی در مراجعات...",
+        "en": "e.g., helping with washing/dressing, preparing meals, medication, accompanying to appointments..."
+      }
+    }
+  ]
+}

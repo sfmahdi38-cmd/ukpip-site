@@ -1,0 +1,123 @@
+{
+  "title": {
+    "fa": "محاسبه‌گر آنلاین مزایای دولتی",
+    "en": "Online Government Benefits Calculator"
+  },
+  "intro": {
+    "fa": "ببینید چه مزایایی ممکن است به شما تعلق بگیرد. استفاده از این محاسبه‌گر رایگان، محرمانه و آسان است.",
+    "en": "Find out what benefits you might be entitled to. Using this calculator is free, confidential, and easy."
+  },
+  "questions": [
+    {
+      "id": "dob",
+      "type": "date",
+      "question": {
+        "fa": "تاریخ تولد شما چیست؟",
+        "en": "What is your date of birth?"
+      }
+    },
+    {
+      "id": "postcode",
+      "type": "short-text",
+      "question": {
+        "fa": "کد پستی شما در بریتانیا چیست؟",
+        "en": "What is your UK postcode?"
+      },
+      "placeholder": {
+        "fa": "مثال: SW1A 0AA",
+        "en": "e.g., SW1A 0AA"
+      }
+    },
+    {
+      "id": "residency_status",
+      "type": "single-select",
+      "question": {
+        "fa": "وضعیت اقامت شما در بریتانیا چگونه است؟",
+        "en": "What is your residency status in the UK?"
+      },
+      "options": [
+        { "value": "citizen", "label": { "fa": "شهروند بریتانیا", "en": "British Citizen" } },
+        { "value": "ilr", "label": { "fa": "اقامت دائم (Indefinite Leave to Remain)", "en": "Indefinite Leave to Remain" } },
+        { "value": "settled", "label": { "fa": "وضعیت اقامت دائم (Settled Status)", "en": "Settled Status" } },
+        { "value": "pre_settled", "label": { "fa": "وضعیت پیش-اقامت دائم (Pre-Settled Status)", "en": "Pre-Settled Status" } },
+        { "value": "refugee", "label": { "fa": "پناهنده / حمایت بشردوستانه", "en": "Refugee / Humanitarian Protection" } },
+        { "value": "work_visa", "label": { "fa": "ویزای کار", "en": "Work Visa" } },
+        { "value": "other", "label": { "fa": "سایر", "en": "Other" } }
+      ]
+    },
+    {
+      "id": "employment_status",
+      "type": "single-select",
+      "question": {
+        "fa": "آیا در حال حاضر شاغل هستید؟",
+        "en": "Are you currently employed?"
+      },
+      "options": [
+        { "value": "yes", "label": { "fa": "بله", "en": "Yes" } },
+        { "value": "no", "label": { "fa": "خیر", "en": "No" } }
+      ]
+    },
+    {
+      "id": "weekly_income",
+      "type": "currency",
+      "question": {
+        "fa": "درآمد شما از کار (پس از کسر مالیات) به صورت هفتگی چقدر است؟",
+        "en": "What is your weekly income from work (after tax)?"
+      },
+      "when": { "employment_status": "yes" },
+      "placeholder": {
+        "fa": "£",
+        "en": "£"
+      }
+    },
+    {
+      "id": "total_savings",
+      "type": "currency",
+      "question": {
+        "fa": "مجموع پس‌انداز شما چقدر است؟",
+        "en": "What is your total amount of savings?"
+      },
+      "placeholder": {
+        "fa": "£",
+        "en": "£"
+      }
+    },
+    {
+      "id": "household",
+      "type": "multi-select",
+      "question": {
+        "fa": "چه کسانی در منزل شما زندگی می‌کنند؟",
+        "en": "Who lives in your household?"
+      },
+      "options": [
+        { "value": "single", "label": { "fa": "فقط من (زندگی مجردی)", "en": "Just me (living alone)" } },
+        { "value": "partner", "label": { "fa": "همسر/پارتنر", "en": "Spouse/Partner" } },
+        { "value": "children", "label": { "fa": "فرزند یا فرزندان", "en": "Child or children" } }
+      ]
+    },
+    {
+      "id": "disability",
+      "type": "single-select",
+      "question": {
+        "fa": "آیا شما یا کسی در خانواده معلولیت جدی یا بیماری طولانی‌مدت دارید؟",
+        "en": "Do you or someone in your household have a severe disability or long-term illness?"
+      },
+      "options": [
+        { "value": "yes", "label": { "fa": "بله", "en": "Yes" } },
+        { "value": "no", "label": { "fa": "خیر", "en": "No" } }
+      ]
+    },
+    {
+      "id": "caring_hours",
+      "type": "single-select",
+      "question": {
+        "fa": "آیا از کسی برای ۳۵ ساعت یا بیشتر در هفته مراقبت می‌کنید؟",
+        "en": "Do you care for someone for 35 or more hours a week?"
+      },
+      "options": [
+        { "value": "yes", "label": { "fa": "بله", "en": "Yes" } },
+        { "value": "no", "label": { "fa": "خیر", "en": "No" } }
+      ]
+    }
+  ]
+}

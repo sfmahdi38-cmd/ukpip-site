@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: pip-assist-backend
+    runtime: node
+    plan: free
+    buildCommand: "npm install && npm run build:server"
+    startCommand: "npm start"
+    healthCheckPath: "/api/health"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GOOGLE_API_KEY
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_WEBHOOK_SECRET
+        sync: false
+      - key: VITE_APP_URL
+        fromService:
+          type: static_site
+          name: pip-assist-frontend
+          property: url
+
+  - type: static_site
+    name: pip-assist-frontend
+    plan: free
+    buildCommand: "npm install && npm run build:client"
+    staticPublishPath: "./dist"
+    envVars:
+      - key: VITE_API_URL
+        fromService:
+          type: web
+          name: pip-assist-backend
+          property: url
+      - key: VITE_STRIPE_PUBLISHABLE_KEY
+        sync: false
